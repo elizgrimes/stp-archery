@@ -1,0 +1,107 @@
+
+html {
+  font-size: 16px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dark {
+  padding: .7rem;
+  background-color: #523e33;
+  color: #ffffe6;
+}
+
+.dark a {
+  color: #ffffe6;
+}
+
+.title {
+  text-decoration: none;
+  color: #ffffe6;
+  font-family: 'Aref Ruqaa', serif;
+  letter-spacing: .15rem;
+  font-style: italic;
+}
+
+.contact-info p{
+  margin: 0;
+}
+
+nav {
+  background-color: #93867d;
+  padding: .5rem;
+}
+
+nav a {
+  padding: .5rem;
+  text-decoration: none;
+  color: #ffffe6;
+}
+
+nav a:hover {
+  background-color: #93c940;
+}
+
+main {
+  padding: .7rem;
+  background-color: #ffffe6;
+}
+
+.arrow {
+  position: absolute;
+  top: 5.11rem;
+  left: 6.5rem;
+  animation: 4s ease 1.5s shoot; 
+}
+
+.arrow-pre-shot {
+/*  animation: 2s ease 0s hide; */
+}
+
+.arrow-after-shot {
+  position: absolute;
+  left: 0;
+  opacity:0;
+  animation: 4s ease 0s show; 
+}
+
+.shooting-arrow {
+  position: relative;
+}
+
+@keyframes shoot {
+  100% { transform: translateX(100rem); }
+}
+
+@keyframes hide {
+  100% { transform: scale(1); opacity: 0; display:none; }
+}
+
+@keyframes show {
+  100% { transform: scale(1); opacity: 1; display:block; }
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+.social-media a {
+  padding: .5rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+footer h4 {
+  font-size: .8rem;
+  margin-bottom: .5rem;
+  font-style: italic;
+}
+
